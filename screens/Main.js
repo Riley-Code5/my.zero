@@ -4,12 +4,6 @@ import { info } from '../info.js';
 import AccountMainView from './mainView.js';
 
 const MainPage = (props) => {
-    const user = props.username.split('@')[0];
-    const contactInfo = [{
-        name: 'R Waghorn (24)',
-        service: 'Teams',
-    },
-];
     const screenHeight = Dimensions.get('window').height;
     const bottomContainerRef = useRef(null);
     const [bottomContainerHeight, setBottomContainerHeight] = useState(0);
@@ -24,12 +18,8 @@ const MainPage = (props) => {
 
     return (
         <View style={styles.container}>
-            <View style={styles.content}>
-                <Text style={styles.accountStatus}>Logged in as {user}</Text>
-            </View>
             <AccountMainView
-            fullName={'Riley Waghorn'}
-            contactInfo={contactInfo}/>
+            fullName={'Riley Waghorn'}/>
             <View
                 ref={bottomContainerRef}
                 style={[styles.bottomContainer, { top: screenHeight - bottomContainerHeight }]}

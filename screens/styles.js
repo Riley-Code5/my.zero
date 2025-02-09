@@ -42,20 +42,24 @@ const styles = StyleSheet.create({
     },
     mainAccountViewButton: {
         padding: 15,
+        borderRadius: 100,
+        borderWidth: 1,
         marginHorizontal: 15,
         alignContent: 'center',
-        width: '15%',
+        width: 20,
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     mainAccountViewButtonIcon: {
-        height: 50,
-        width: 50,
+        height: 10,
+        width: 10,
     },
     topBarMainAccountView: {
         padding: 20,
         backgroundColor: 'lightblue',
         borderWidth: 0.5,
         borderColor: '#818181',
-        flexDirection: 'row',
         justifyContent: 'center',
     },
     gearIconTopBarMainAccount: {

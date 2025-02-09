@@ -2,15 +2,14 @@ import React from 'react';
 import { Text, Button, View, TextInput } from 'react-native';
 import styles from './styles';
 import MainPage from './Main.js';
-import MainAccountView from './mainView.js';
 import { info } from '../info.js';
 
-const Account = (props) => {
+const Account = () => {
     const [password, setPassword] = React.useState('');
-    const [Email, setEmail] = React.useState('');
+    const [Email, setEmail] = React.useState('24r.waghorn@thelenham.viat.org.uk');
     const [schId, setSchId] = React.useState(info.schoolId);
     const [schIdE, setSchIdE] = React.useState(true);
-    const [loggedIn, setLoggedIn] = React.useState(false);
+    const [loggedIn, setLoggedIn] = React.useState(true);
 
     const logIn = () => {
         console.log('Email:', Email, 'Password:', password);
