@@ -7,7 +7,7 @@ import Icon from '../assets/iconhelper/helper';
 
 const MainAccountView = (props) => {
     const loadContactCard = () => {
-        
+        return null;
     };
     return (
     <>
