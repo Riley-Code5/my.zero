@@ -1,0 +1,2 @@
+# My.Zero (TLS)
+My.Zero TLS is designed for The Lenham School set of devices, with specific catered information. It allows for database management by an IT administrator. The tool can be switched to a different school ID if the preset value is not correct. You can modify `info.js` to customise it further.
