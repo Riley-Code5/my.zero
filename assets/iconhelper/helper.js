@@ -10,6 +10,10 @@ const Icon = (props) => {
         return <Image height={props.dimensions} width={props.dimensions} source={require('../icons/gear.png')} style={props.style}/>;
     } else if (props.icon === 'chain') {
         return <Image height={props.dimensions} width={props.dimensions} source={require('../icons/chain.png')} style={props.style}/>;
+    } else if (props.icon === 'teams') {
+        return <Image height={props.dimensions} width={props.dimensions} source={require('../icons/teams.png')} style={props.style}/>;
+    } else if (props.icon === 'mail') {
+        return <Image height={props.dimensions} width={props.dimensions} source={require('../icons/mail.png')} style={props.style}/>;
     } else {
         return <Image height={props.dimensions} width={props.dimensions} source={require('../icons/missing.png')} style={props.style}/>;
     }

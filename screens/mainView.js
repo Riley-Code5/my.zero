@@ -6,6 +6,9 @@ import styles from './styles';
 import Icon from '../assets/iconhelper/helper';
 
 const MainAccountView = (props) => {
+    const loadContactCard = () => {
+        
+    };
     return (
     <>
     <View style={styles.topBarMainAccountView}>
@@ -14,7 +17,9 @@ const MainAccountView = (props) => {
         <View style={styles.mainAccountViewContainer}>
             <View>
                 <View>
-                    <Image source={props.profileImage} style={styles.profileImageTreadmill}/>
+                    <TouchableOpacity onPress={loadContactCard} style={styles.profileImageTreadmillButton}>
+                            <Image source={props.profileImage} style={styles.profileImageTreadmill}/>
+                    </TouchableOpacity>
                         <View style={styles.mainAccountViewContainerLeft}>
                             <View>
                                 <TouchableOpacity style={[styles.mainAccountViewButtonSide1, {backgroundColor: 'lightgrey'}]}>

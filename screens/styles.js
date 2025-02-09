@@ -108,6 +108,13 @@ const styles = StyleSheet.create({
         right: 175,
         bottom: -73,
     },
+    profileImageTreadmillButton: {
+        height: 350,
+        width: 350,
+        position: 'absolute',
+        left: 330,
+        bottom: 0,
+    },
     mainAccountViewButtonText: {
         fontSize: 10,
     },

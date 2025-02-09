@@ -6,10 +6,10 @@ import { info } from '../info.js';
 
 const Account = () => {
     const [password, setPassword] = React.useState('');
-    const [Email, setEmail] = React.useState('24r.waghorn@thelenham.viat.org.uk');
+    const [Email, setEmail] = React.useState('');
     const [schId, setSchId] = React.useState(info.schoolId);
     const [schIdE, setSchIdE] = React.useState(true);
-    const [loggedIn, setLoggedIn] = React.useState(true);
+    const [loggedIn, setLoggedIn] = React.useState(false);
 
     const logIn = () => {
         console.log('Email:', Email, 'Password:', password);
@@ -30,9 +30,10 @@ const Account = () => {
                 style={styles.schIdTextEntry}
                 value={schId}
                 onChange={(text) => setSchId(text)}
-                placeholderTextColor={'School Id'}/>
+                placeholderText={'School Id'}/>
                 <Button
                 title={'Switch School'}
+                placeholderTextColor={'#141414'}
                 onPress={finishTransitionTemp}/>
                 <Text style={styles.schResetInfoText}>{info.schResetInstructions}</Text>
             </>
@@ -45,11 +46,13 @@ const Account = () => {
                 <TextInput
                 value={Email}
                 style={styles.entryField}
+                placeholderTextColor={'#141414'}
                 onChangeText={(text) => setEmail(text)}
                 placeholder={'Email'}/>
                 <TextInput
                 style={styles.entryField}
                 placeholder={'Password'}
+                placeholderTextColor={'#141414'}
                 onChangeText={(text) => setPassword(text)}
                 value={password}
                 secureTextEntry={true}/>
