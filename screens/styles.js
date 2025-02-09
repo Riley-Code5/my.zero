@@ -34,33 +34,36 @@ const styles = StyleSheet.create({
         borderColor: '#818181',
     },
     mainAccountViewContainer: {
-        padding: 15,
+        padding: 20,
         margin: 50,
         marginTop: '35%',
         borderRadius: 400,
+        height: 300,
         borderWidth: 1,
     },
-    mainAccountViewButton: {
+    mainAccountViewButtonSide1: {
         padding: 15,
+        margin: 20,
         borderRadius: 100,
         borderWidth: 1,
-        marginHorizontal: 15,
         alignContent: 'center',
-        width: 20,
+        width: 75,
+        height: 75,
         backgroundColor: 'white',
         justifyContent: 'center',
         alignItems: 'center',
     },
     mainAccountViewButtonIcon: {
-        height: 10,
-        width: 10,
+        height: 20,
+        width: 20,
     },
     topBarMainAccountView: {
         padding: 20,
         backgroundColor: 'lightblue',
         borderWidth: 0.5,
         borderColor: '#818181',
-        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
     },
     gearIconTopBarMainAccount: {
         height: 25,
@@ -69,6 +72,44 @@ const styles = StyleSheet.create({
     },
     topBarMainAccountViewText: {
         fontSize: 18,
+    },
+    mainAccountViewButtonSide2: {
+        padding: 15,
+        margin: 20,
+        borderRadius: 100,
+        borderWidth: 1,
+        alignContent: 'center',
+        width: 75,
+        height: 75,
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    mainAccountViewContainerRight: {
+        position: 'absolute',
+        right: 20,
+    },
+    mainAccountViewLeft: {
+        padding: 15,
+        margin: 50,
+        marginTop: '35%',
+        borderRadius: 400,
+        height: 300,
+        borderWidth: 1,
+    },
+    profileImageTopBar: {
+        height: 30,
+        width: 30,
+    },
+    profileImageTreadmill: {
+        height: 350,
+        width: 350,
+        position: 'absolute',
+        right: 175,
+        bottom: -73,
+    },
+    mainAccountViewButtonText: {
+        fontSize: 10,
     },
 });
 

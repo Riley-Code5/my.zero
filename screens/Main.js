@@ -19,7 +19,8 @@ const MainPage = (props) => {
     return (
         <View style={styles.container}>
             <AccountMainView
-            fullName={'Riley Waghorn'}/>
+            fullName={'Riley Waghorn'}
+            profileImage={require('../assets/image/profile.png')}/>
             <View
                 ref={bottomContainerRef}
                 style={[styles.bottomContainer, { top: screenHeight - bottomContainerHeight }]}
