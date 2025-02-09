@@ -15,12 +15,23 @@ const MainPage = (props) => {
             });
         }
     };
+    const contactCard = [
+        {
+            service: 'teams',
+            name: 'R Waghorn (24)',
+        },
+        {
+            service: 'mail',
+            name: '24r.waghorn@thelenham.viat.org.uk',
+        },
+    ];
 
     return (
         <View style={styles.container}>
             <AccountMainView
             fullName={'Riley Waghorn'}
-            profileImage={require('../assets/image/profile.png')}/>
+            profileImage={require('../assets/image/profile.png')}
+            contactInfo={contactCard}/>
             <View
                 ref={bottomContainerRef}
                 style={[styles.bottomContainer, { top: screenHeight - bottomContainerHeight }]}
