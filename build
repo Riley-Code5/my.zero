@@ -1,0 +1,1 @@
+react-native build-$1 --mode=$2

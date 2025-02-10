@@ -5,7 +5,10 @@ require Pod::Executable.execute_command('node', ['-p',
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-platform :ios, min_ios_version_supported
+use_modular_headers! # Add this line at the very top
+
+platform :ios, min_ios_version_supported # Make sure min_ios_version_supported is defined
+
 prepare_react_native_project!
 
 linkage = ENV['USE_FRAMEWORKS']
