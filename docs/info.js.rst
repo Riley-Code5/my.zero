@@ -18,6 +18,7 @@ ______
     persistentEmail: '',
     exampleTimeTable: true,
     persistentPassword: '',
+    verbose: true,
     useEdulinkAPI: false, // Unaffected by production flag. See My.Zero Documentation for more information and setup. (Recommended for transition stages from EduLink.)
     useLOCALHOSTsql: true, // Unaffected by production flag. See My.Zero Documentation for more information and setup (Recommended for large amounts of user data and credentials.)
 
@@ -45,6 +46,7 @@ ______
 | ``persistentEmail``: Pre-fills the email state variable to the value, needed for the ``startLoggedIn`` flag or for ease of testing the log in screen.
 | ``exampleTimeTable``: Fills the timetable tab with an example 2-week timetable.
 | ``persistentPassword``: Pre-fills the password state variable to the value, needed for the ``startLoggedIn`` flag or for ease of testing the log in screen.
+| ``verbose``: Gives enhanced debugging tools (eg. longer errors).
 | ``useEdulinkAPI``: Explained in :doc:`transition`.
 | ``useLOCALHOSTsql``: Recommended method for most scenarios, more information can be found in :doc:`datamethods`
 | ``production``: Sets other values to false or empty, for ease of production testing.
