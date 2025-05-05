@@ -1,5 +1,4 @@
-Transition
-==========
+cTransition==========
 
 My.Zero supports a handful of transition methods from other educative systems.
 
@@ -11,6 +10,7 @@ Based on the unofficial APIs for EduLink One on Github, there is support for usi
 In info.js, there is the following content inside the info constant:
 
 .. code-block:: javascript
+
         flags: {
             startLoggedIn: false,
             persistentEmail: '',
@@ -31,10 +31,16 @@ In info.js, there is the following content inside the info constant:
 
 
 We can ignore all but the following fields:
-| ``edulinkUsername``  
+
+| ``edulinkUsername``
+
 | ``edulinkSchoolId``
+
 | ``edulinkPassword``
+
 | ``useEdulinkAPI``
+
+
 | Each of these fields has a purpose for using the API, allowing for easy use of pre-existing data.
 | 
 | 
@@ -43,6 +49,9 @@ We can ignore all but the following fields:
 | ``edulinkSchoolId`` - EduLink school ID ([schID].edulinkone.com)
 | ``edulinkPassword`` - EduLink account password.
 | ``useEdulinkAPI`` - The EduLink API switch. Set to ``true`` if using.
+
+
+
 
 .. note::
 
