@@ -3,9 +3,10 @@ info.js
 
 Flags
 ______
+Flags
+
 
 .. codeblock:: javascript
- :linenos:
   const info = {
   schoolId: '',
   schIdContext: '',
@@ -31,3 +32,5 @@ ______
     edulinkSchoolId: '',
     edulinkPassword: '',
         }}
+
+Flags
