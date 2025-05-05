@@ -30,5 +30,4 @@ ______
     edulinkUsername: '',
     edulinkSchoolId: '',
     edulinkPassword: '',
-        },
-}
+        }}
