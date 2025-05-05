@@ -51,7 +51,5 @@ We can ignore all but the following fields:
 | ``useEdulinkAPI`` - The EduLink API switch. Set to ``true`` if using.
 
 
-
-
 .. warning::
 In testing, we have found that some schools do not have a custom URL and hence will not work. If this is a problem, maybe use the :doc:`datamethods` page to host the appropriate data.
