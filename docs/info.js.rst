@@ -40,4 +40,14 @@ ______
 | ``emailUsernameCorrelation``: To be used in-collaboration with ``emailSuffix``. If true, the username will always be the prefix of the email (eg. [username]@[``emailSuffix``])
 | 
 | ``flags``:
-
+|     A set of debugging tools (or production features) for smooth deployment.
+| ``startLoggedIn``: Starts the application logged in (with details from ``persistentEmail`` and ``persistentPassword``)
+| ``persistentEmail``: Pre-fills the email state variable to the value, needed for the ``startLoggedIn`` flag or for ease of testing the log in screen.
+| ``exampleTimeTable``: Fills the timetable tab with an example 2-week timetable.
+| ``persistentPassword``: Pre-fills the password state variable to the value, needed for the ``startLoggedIn`` flag or for ease of testing the log in screen.
+| ``useEdulinkAPI``: Explained in :doc:`transition`.
+| ``useLOCALHOSTsql``: Recommended method for most scenarios, more information can be found in :doc:`datamethods`
+| ``production``: Sets other values to false or empty, for ease of production testing.
+| ``edulinkUsername``: Explained in :doc:`transition`.
+| ``edulinkSchoolId``: Explained in :doc:`transition`.
+| ``edulinkPassword``: Explained in :doc:`transition`.
