@@ -31,13 +31,13 @@ ______
     edulinkPassword: '',
         }}
 
-|``schoolId``: The My.Zero school ID, shown at the bottom of the page when logged in.
-|``schIdContext``: Appended after the ``schoolID`` paramater. If using, you may want to enclose in brackets.
-|``schNameShortHand``: Shown on the log in screen, next to My.Zero. If using, you may want to enclose in brackets.
-|``version``: The version number shown under the School ID.
-|`schoolLinks`: An array of URLs as strings, without the trailing forward slash or the http(s):// protocol.
-|``emailSuffix``: To be used in-collaboration with ``emailUsernameCorrelation``. It is the email suffix of all users in the system.
-|``emailUsernameCorrelation``: To be used in-collaboration with ``emailSuffix``. If true, the username will always be the prefix of the email (eg. [username]@[``emailSuffix``])
-|
-|``flags``:
+| ``schoolId``: The My.Zero school ID, shown at the bottom of the page when logged in.
+| ``schIdContext``: Appended after the ``schoolID`` paramater. If using, you may want to enclose in brackets.
+| ``schNameShortHand``: Shown on the log in screen, next to My.Zero. If using, you may want to enclose in brackets.
+| ``version``: The version number shown under the School ID.
+| ``schoolLinks``: An array of URLs as strings, without the trailing forward slash or the http(s):// protocol.
+| ``emailSuffix``: To be used in-collaboration with ``emailUsernameCorrelation``. It is the email suffix of all users in the system.
+| ``emailUsernameCorrelation``: To be used in-collaboration with ``emailSuffix``. If true, the username will always be the prefix of the email (eg. [username]@[``emailSuffix``])
+| 
+| ``flags``:
 
