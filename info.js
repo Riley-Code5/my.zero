@@ -14,6 +14,7 @@ const info = {
             persistentEmail: '',
             exampleTimeTable: true,
             persistentPassword: '',
+            verbose: true,
             useEdulinkAPI: false, // Unaffected by production flag. See My.Zero Documentation for more information and setup. (Recommended for transition stages from EduLink.)
             useLOCALHOSTsql: true, // Unaffected by production flag. See My.Zero Documentation for more information and setup (Recommended for large amounts of user data and credentials.)
 
@@ -25,10 +26,17 @@ const info = {
             edulinkUsername: '',
             edulinkSchoolId: '',
             edulinkPassword: '',
+
+            // SQL
+            useLocal: true,
+            port: 3290,
+            isTunneled: false,
+            localTunnel: '',
         },
     };
 if (info.flags.production) {
     info.flags.startLoggedIn = false;
+    info.flags.verbose = false;
     info.flags.persistentEmail = '';
     info.flags.exampleTimeTable = false;
     info.flags.persistentPassword = '';
