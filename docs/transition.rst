@@ -1,4 +1,5 @@
-cTransition==========
+Transition
+==========
 
 My.Zero supports a handful of transition methods from other educative systems.
 
