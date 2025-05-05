@@ -31,7 +31,7 @@ In info.js, there is the following content inside the info constant:
 
 
 We can ignore all but the following fields:
-| ``edulinkUsername``
+| ``edulinkUsername``  
 | ``edulinkSchoolId``
 | ``edulinkPassword``
 | ``useEdulinkAPI``
