@@ -7,7 +7,7 @@ Flags
 
 
 .. code-block:: javascript
- :linenos:
+
   const info = {
   schoolId: '',
   schIdContext: '',
