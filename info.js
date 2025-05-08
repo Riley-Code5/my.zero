@@ -16,7 +16,8 @@ const info = {
             persistentPassword: '',
             verbose: true,
             useEdulinkAPI: false, // Unaffected by production flag. See My.Zero Documentation for more information and setup. (Recommended for transition stages from EduLink.)
-            useLOCALHOSTsql: true, // Unaffected by production flag. See My.Zero Documentation for more information and setup (Recommended for large amounts of user data and credentials.)
+            useLOCALHOSTsql: false, // Unaffected by production flag. See My.Zero Documentation for more information and setup (Recommended for large amounts of user data and credentials.)
+            usePreDefinedSQL: false, // Unaffected by production flag. See My.Zero Documentation for more information and setup (Recommended for large amounts of user data and credentials.)
 
 
 
@@ -27,11 +28,16 @@ const info = {
             edulinkSchoolId: '',
             edulinkPassword: '',
 
-            // SQL
+            // SQL - LOCALHOST
             useLocal: true,
-            port: 3290,
-            isTunneled: false,
-            localTunnel: '',
+            isTunneled: true,
+            localTunnel: 'https://tw78er6tcs89w.loca.lt',
+
+            // SQL - PRE-DEFINED
+            useFile: false,
+            databasePrefixPath: './.sqlite/',
+            usersDB: 'users.db',
+            timetablesDB: 'timetables.db',
         },
     };
 if (info.flags.production) {
